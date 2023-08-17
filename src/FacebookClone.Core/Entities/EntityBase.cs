@@ -15,5 +15,5 @@ public abstract class EntityBase
 
     public DateTime? UpdatedAt { get; set; }
 
-    public string? UpdatedBy { get; set; }
+    public string UpdatedBy { get; set; }
 }

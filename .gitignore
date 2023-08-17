@@ -29,6 +29,9 @@ obj/
 .history
 .ionide
 
+# Visual Studio
+.vs/
+
 # Local files
 .DS_Store
 *.drawio.bkp
