@@ -1,8 +1,4 @@
 using FacebookClone.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Linq;
 
 namespace FacebookClone.Infrastructure.Data
 {
