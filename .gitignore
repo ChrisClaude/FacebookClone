@@ -29,4 +29,6 @@ obj/
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/dotnetcore,visualstudiocode
+# Local files
+.DS_Store
+*.drawio.bkp
