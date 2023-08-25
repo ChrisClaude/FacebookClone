@@ -3,9 +3,9 @@ using FacebookClone.Core.Entities;
 
 namespace FacebookClone.Infrastructure.Data;
 
-public class FacebookCloneDBContext : DbContext
+public class FacebookCloneDbContext : DbContext
 {
-    public FacebookCloneDBContext(DbContextOptions<FacebookCloneDBContext> options)
+    public FacebookCloneDbContext(DbContextOptions<FacebookCloneDbContext> options)
         : base(options)
     {
     }

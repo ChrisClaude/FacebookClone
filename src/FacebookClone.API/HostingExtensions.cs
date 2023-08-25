@@ -1,3 +1,6 @@
+using FacebookClone.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace FacebookClone.API;
 
 public static class HostingExtensions
@@ -7,6 +10,8 @@ public static class HostingExtensions
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddDbContext<FacebookCloneDbContext>(
+            options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 
         return builder.Build();
     }

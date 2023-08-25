@@ -6,7 +6,7 @@ namespace FacebookClone.Infrastructure.Data
     {
         private const string DefaultCreatedBy = "Admin";
 
-        public static async Task Initialize(FacebookCloneDBContext context)
+        public static async Task Initialize(FacebookCloneDbContext context)
         {
             if (!context.LikeableTypes.Any())
             {
@@ -24,7 +24,7 @@ namespace FacebookClone.Infrastructure.Data
             }
         }
 
-        private static void AddLikeableTypes(FacebookCloneDBContext context)
+        private static void AddLikeableTypes(FacebookCloneDbContext context)
         {
             var likeableTypes = new List<LikeableType>
             {
@@ -45,7 +45,7 @@ namespace FacebookClone.Infrastructure.Data
             };
         }
 
-        private static void AddCommentTypes(FacebookCloneDBContext context)
+        private static void AddCommentTypes(FacebookCloneDbContext context)
         {
             var commentTypes = new List<CommentType>
             {
