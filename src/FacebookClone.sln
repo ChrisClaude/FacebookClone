@@ -5,13 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89084D90-6ED0-4C2F-9791-60D4CB147FCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.API", "src\FacebookClone.API\FacebookClone.API.csproj", "{FD65983E-9ABD-422F-AEB0-34C975B59B0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.API", "FacebookClone.API\FacebookClone.API.csproj", "{FD65983E-9ABD-422F-AEB0-34C975B59B0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.Core", "src\FacebookClone.Core\FacebookClone.Core.csproj", "{B73E870F-BB49-4D5F-AF16-2E67C9DFFCF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.Core", "FacebookClone.Core\FacebookClone.Core.csproj", "{B73E870F-BB49-4D5F-AF16-2E67C9DFFCF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.Infrastructure", "src\FacebookClone.Infrastructure\FacebookClone.Infrastructure.csproj", "{E2975D30-EF78-4CF3-A580-AAF4F5FC1A3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.Infrastructure", "FacebookClone.Infrastructure\FacebookClone.Infrastructure.csproj", "{E2975D30-EF78-4CF3-A580-AAF4F5FC1A3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.SharedKernel", "src\FacebookClone.SharedKernel\FacebookClone.SharedKernel.csproj", "{86C3E978-DC6A-4A33-9FD1-51A5ABAC612D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookClone.SharedKernel", "FacebookClone.SharedKernel\FacebookClone.SharedKernel.csproj", "{86C3E978-DC6A-4A33-9FD1-51A5ABAC612D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

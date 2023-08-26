@@ -10,7 +10,7 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
     {
            services.AddDbContext<FacebookCloneDbContext>(
-            options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", x => x.MigrationsAssembly("FacebookClone.Infrastructure")));
+            options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 
             return services;
     }
