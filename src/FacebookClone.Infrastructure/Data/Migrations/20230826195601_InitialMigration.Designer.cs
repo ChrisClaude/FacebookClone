@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FacebookClone.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(FacebookCloneDbContext))]
-    [Migration("20230826192731_Migration_Name")]
-    partial class Migration_Name
+    [Migration("20230826195601_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -97,16 +97,16 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = -1,
+                            Id = 1,
                             CommentTypeValue = "Comment",
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6760), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4090), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin"
                         },
                         new
                         {
-                            Id = -2,
+                            Id = 2,
                             CommentTypeValue = "CommentReply",
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6760), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4090), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin"
                         });
                 });
@@ -251,15 +251,15 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = -1,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6780), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 1,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4120), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             LikeableTypeValue = "Post"
                         },
                         new
                         {
-                            Id = -2,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6780), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 2,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4120), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             LikeableTypeValue = "Comment"
                         });
@@ -338,50 +338,50 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = -1,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 1,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             ReactionTypeValue = "Like"
                         },
                         new
                         {
-                            Id = -2,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 2,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             ReactionTypeValue = "Love"
                         },
                         new
                         {
-                            Id = -3,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 3,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             ReactionTypeValue = "Care"
                         },
                         new
                         {
-                            Id = -4,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 4,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             ReactionTypeValue = "Laugh"
                         },
                         new
                         {
-                            Id = -5,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 5,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             ReactionTypeValue = "Wow"
                         },
                         new
                         {
-                            Id = -6,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6830), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 6,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4170), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             ReactionTypeValue = "Sad"
                         },
                         new
                         {
-                            Id = -7,
-                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6830), new TimeSpan(0, 0, 0, 0, 0)),
+                            Id = 7,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4170), new TimeSpan(0, 0, 0, 0, 0)),
                             CreatedBy = "Admin",
                             ReactionTypeValue = "Angry"
                         });

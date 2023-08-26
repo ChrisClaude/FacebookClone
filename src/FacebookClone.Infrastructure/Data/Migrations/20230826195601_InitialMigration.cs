@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FacebookClone.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class Migration_Name : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -202,8 +202,8 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                 columns: new[] { "Id", "CommentTypeValue", "CreatedAt", "CreatedBy", "UpdatedAt", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { -2, "CommentReply", new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6760), new TimeSpan(0, 0, 0, 0, 0)), "Admin", null, null },
-                    { -1, "Comment", new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6760), new TimeSpan(0, 0, 0, 0, 0)), "Admin", null, null }
+                    { 1, "Comment", new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4090), new TimeSpan(0, 0, 0, 0, 0)), "Admin", null, null },
+                    { 2, "CommentReply", new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4090), new TimeSpan(0, 0, 0, 0, 0)), "Admin", null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -211,8 +211,8 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                 columns: new[] { "Id", "CreatedAt", "CreatedBy", "LikeableTypeValue", "UpdatedAt", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { -2, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6780), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Comment", null, null },
-                    { -1, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6780), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Post", null, null }
+                    { 1, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4120), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Post", null, null },
+                    { 2, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4120), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Comment", null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -220,13 +220,13 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                 columns: new[] { "Id", "CreatedAt", "CreatedBy", "ReactionTypeValue", "UpdatedAt", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { -7, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6830), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Angry", null, null },
-                    { -6, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6830), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Sad", null, null },
-                    { -5, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Wow", null, null },
-                    { -4, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Laugh", null, null },
-                    { -3, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Care", null, null },
-                    { -2, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Love", null, null },
-                    { -1, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Like", null, null }
+                    { 1, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Like", null, null },
+                    { 2, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Love", null, null },
+                    { 3, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Care", null, null },
+                    { 4, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Laugh", null, null },
+                    { 5, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4160), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Wow", null, null },
+                    { 6, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4170), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Sad", null, null },
+                    { 7, new DateTimeOffset(new DateTime(2023, 8, 26, 19, 56, 1, 622, DateTimeKind.Unspecified).AddTicks(4170), new TimeSpan(0, 0, 0, 0, 0)), "Admin", "Angry", null, null }
                 });
 
             migrationBuilder.CreateIndex(
