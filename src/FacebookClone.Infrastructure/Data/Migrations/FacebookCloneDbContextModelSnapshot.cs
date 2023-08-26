@@ -90,6 +90,22 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("CommentTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = -1,
+                            CommentTypeValue = "Comment",
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6760), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin"
+                        },
+                        new
+                        {
+                            Id = -2,
+                            CommentTypeValue = "CommentReply",
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6760), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("FacebookClone.Core.Entities.Content", b =>
@@ -228,6 +244,22 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("LikeableTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = -1,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6780), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            LikeableTypeValue = "Post"
+                        },
+                        new
+                        {
+                            Id = -2,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6780), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            LikeableTypeValue = "Comment"
+                        });
                 });
 
             modelBuilder.Entity("FacebookClone.Core.Entities.Post", b =>
@@ -299,6 +331,57 @@ namespace FacebookClone.Infrastructure.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ReactionTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = -1,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            ReactionTypeValue = "Like"
+                        },
+                        new
+                        {
+                            Id = -2,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            ReactionTypeValue = "Love"
+                        },
+                        new
+                        {
+                            Id = -3,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            ReactionTypeValue = "Care"
+                        },
+                        new
+                        {
+                            Id = -4,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            ReactionTypeValue = "Laugh"
+                        },
+                        new
+                        {
+                            Id = -5,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6820), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            ReactionTypeValue = "Wow"
+                        },
+                        new
+                        {
+                            Id = -6,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6830), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            ReactionTypeValue = "Sad"
+                        },
+                        new
+                        {
+                            Id = -7,
+                            CreatedAt = new DateTimeOffset(new DateTime(2023, 8, 26, 19, 27, 31, 142, DateTimeKind.Unspecified).AddTicks(6830), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedBy = "Admin",
+                            ReactionTypeValue = "Angry"
+                        });
                 });
 
             modelBuilder.Entity("FacebookClone.Core.Entities.Video", b =>

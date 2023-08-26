@@ -25,5 +25,9 @@ public class FacebookCloneDbContext : DbContext
         modelBuilder.Entity<Video>()
             .HasIndex(video => video.ContentId)
             .IsUnique();
+
+        modelBuilder.Entity<CommentType>().HasData(SeedData.GetCommentTypes());
+        modelBuilder.Entity<LikeableType>().HasData(SeedData.GetLikeableTypes());
+        modelBuilder.Entity<ReactionType>().HasData(SeedData.GetReactionTypes());
     }
 }

@@ -3,7 +3,9 @@ using FacebookClone.API;
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder
-        .ConfigureServices()
-        .ConfigureRequestPipeline();
+    .ConfigureServices()
+    .ConfigureRequestPipeline();
+
+
 
 app.Run();

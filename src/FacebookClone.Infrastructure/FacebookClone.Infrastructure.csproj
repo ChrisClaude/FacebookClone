@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FacebookClone.Core\FacebookClone.Core.csproj" />
+    <ProjectReference Include="..\FacebookClone.SharedKernel\FacebookClone.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>
