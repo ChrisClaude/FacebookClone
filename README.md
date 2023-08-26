@@ -1,11 +1,13 @@
 # Facebook Clone
 
-This project is a clone of [Facebook](https://facebook.com), aiming to replicate some of its core functionalities. It serves as a practical exercise and demonstration of certain technologies and architectural patterns.
+This project is a minimal clone of [Facebook](https://facebook.com), aiming to replicate some of its core functionalities. It serves as a practical exercise and demonstration of web development technologies and architectural patterns.
 
 ## Technologies Used
 
-- **Server Side**: .NET 7
-- **Client Side**: Next.js
+- **Server Side**: ASP.NET 7, Entity Framework
+- **Identity Service**: Duende Identity (Formely known as IdentityServer)
+- **Databe Tech**: SQL Server
+- **Client Side**: React JS, Next.js, TailwindCSS
 
 ## Architecture
 
@@ -13,12 +15,23 @@ The application follows the principles of [Clean Architecture](https://learn.mic
 
 ## Features
 
-(Provide a list of main features you've implemented or plan to implement)
+This is the list of features we initially planned on implementing. We've categorize these features as modules.
 
+### Identity Module
 - User registration and authentication
-- Posting status updates
-- Commenting on posts
-- ... and more
+
+### Post Module
+- Adding posts
+- Commenting on a post
+- Reacting to a post (like, love, laugh and different other types of reactions)
+- Replying to a post's comment
+
+### Friend Connection Module
+- Adding friends
+- Making connection friends
+- Chatting with friends
+- Viewing friends that are online
+- etc...
 
 ## Getting Started
 
@@ -27,18 +40,27 @@ Provide a brief guide on how to set up the project.
 1. Clone the repository:
 
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/ChrisClaude/FacebookClone
    ```
 
-2. Clone the repository:
+2. Run the backend
 
    ```bash
-   git clone [your-repo-url].
+   cd FacebookClone
+   cd src/FacebookClone.API
+   dotnet ef database update
+   dotnet run
    ```
+   Make sure the connection string in appsettings.json matches your sql server configurations. You might want to change the credentials to your own credentials.
 
-3. Navigate to the project folder: cd facebook-clone.
-4. Install dependencies: (Provide steps for both server and client side).
-5. Run the project: (Provide steps for both server and client side).
+3. Run the Frontend
+
+   ```bash
+   cd FacebookClone
+   cd src/web-client
+   npm install
+   npm dev
+   ```
 
 ## Contributing
 
